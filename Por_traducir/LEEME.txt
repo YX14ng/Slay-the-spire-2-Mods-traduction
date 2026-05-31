@@ -1,0 +1,9 @@
+Carpeta para mods PENDIENTES de traducir al espanol.
+
+Como usar:
+1) Pega aca la carpeta COMPLETA del mod (con su .dll, .json y .pck).
+2) Avisa que lo traduzca.
+3) Se extrae localization/eng, se crea localization/esp, se reempaqueta el .pck
+   y el mod terminado se mueve a ../Traducidos/.
+
+Ya traducidos (en ../Traducidos/): Manosaba, Acheron, Kafka, Remilia, MeiLin.
