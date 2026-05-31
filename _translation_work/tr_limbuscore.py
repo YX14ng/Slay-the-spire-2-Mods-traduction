@@ -1,0 +1,86 @@
+# -*- coding: utf-8 -*-
+import json, os
+P = r"f:/Programs/Slay-the-spire-2-Mods-traduction/_translation_work/pendientes/LimbusCore/esp"
+os.makedirs(P, exist_ok=True)
+powers = {
+ "LIMBUSCORE-L_C_EVADE_POWER.title":"Evasión",
+ "LIMBUSCORE-L_C_EVADE_POWER.description":"Evade todo el daño menor o igual a la cantidad de acumulaciones.",
+ "LIMBUSCORE-L_C_EVADE_POWER.smartDescription":"Evade todo el daño menor o igual a [blue]{Amount}[/blue].",
+ "LIMBUSCORE-L_C_FRAGILE_NEXT_TURN.title":"Fragilidad el próximo turno",
+ "LIMBUSCORE-L_C_FRAGILE_NEXT_TURN.description":"Aplica [gold]Fragilidad[/gold] el próximo turno.",
+ "LIMBUSCORE-L_C_FRAGILE_NEXT_TURN.smartDescription":"Aplica [blue]{Amount}[/blue] de [gold]Fragilidad[/gold] el próximo turno.",
+ "LIMBUSCORE-L_C_FRAGILE_POWER.title":"Fragilidad",
+ "LIMBUSCORE-L_C_FRAGILE_POWER.description":"Recibes [blue]+10%[/blue] de daño por acumulación este turno (máx. [blue]100%[/blue]).",
+ "LIMBUSCORE-L_C_FRAGILE_POWER.smartDescription":"Recibes [blue]+10%[/blue] de daño por acumulación este turno (máx. [blue]100%[/blue]).",
+ "LIMBUSCORE-L_C_BLUNT_FRAGILITY.title":"Fragilidad Contundente",
+ "LIMBUSCORE-L_C_BLUNT_FRAGILITY.description":"Recibes [blue]+10%[/blue] de daño [gold]Contundente[/gold] por acumulación este turno (máx. [blue]100%[/blue]).",
+ "LIMBUSCORE-L_C_BLUNT_FRAGILITY.smartDescription":"Recibes [blue]+10%[/blue] de daño [gold]Contundente[/gold] por acumulación este turno (máx. [blue]100%[/blue]).",
+ "LIMBUSCORE-L_C_PIERCE_FRAGILITY.title":"Fragilidad Perforante",
+ "LIMBUSCORE-L_C_PIERCE_FRAGILITY.description":"Recibes [blue]+10%[/blue] de daño [gold]Perforante[/gold] por acumulación este turno (máx. [blue]100%[/blue]).",
+ "LIMBUSCORE-L_C_PIERCE_FRAGILITY.smartDescription":"Recibes [blue]+10%[/blue] de daño [gold]Perforante[/gold] por acumulación este turno (máx. [blue]100%[/blue]).",
+ "LIMBUSCORE-L_C_SLASH_FRAGILITY.title":"Fragilidad Cortante",
+ "LIMBUSCORE-L_C_SLASH_FRAGILITY.description":"Recibes [blue]+10%[/blue] de daño [gold]Cortante[/gold] por acumulación este turno (máx. [blue]100%[/blue]).",
+ "LIMBUSCORE-L_C_SLASH_FRAGILITY.smartDescription":"Recibes [blue]+10%[/blue] de daño [gold]Cortante[/gold] por acumulación este turno (máx. [blue]100%[/blue]).",
+ "LIMBUSCORE-L_C_STRENGTH_NEXT_TURN.title":"Fuerza el próximo turno",
+ "LIMBUSCORE-L_C_STRENGTH_NEXT_TURN.description":"Obtienes [gold]fuerza[/gold] el próximo turno.",
+ "LIMBUSCORE-L_C_STRENGTH_NEXT_TURN.smartDescription":"Obtienes [blue]{Amount}[/blue] de [gold]fuerza[/gold] el próximo turno.",
+ "LIMBUSCORE-L_C_WEAK_NEXT_TURN.title":"Debilitamiento el próximo turno",
+ "LIMBUSCORE-L_C_WEAK_NEXT_TURN.description":"Obtienes [gold]debilitamiento[/gold] el próximo turno.",
+ "LIMBUSCORE-L_C_WEAK_NEXT_TURN.smartDescription":"Obtienes [blue]{Amount}[/blue] de [gold]debilitamiento[/gold] el próximo turno.",
+ "LIMBUSCORE-L_C_POISE_POWER.title":"Aplomo",
+ "LIMBUSCORE-L_C_POISE_POWER.description":"Aumenta la probabilidad de golpe crítico en [blue]5%[/blue] por cada [gold]Potencia[/gold]. El daño [gold]crítico[/gold] es [blue]1.2x[/blue]. Se pierde tras un [gold]Recuento[/gold] determinado de golpes.",
+ "LIMBUSCORE-L_C_POISE_POWER.smartDescription":"Aumenta la probabilidad de golpe crítico en [blue]{Potency}*5%[/blue] ([blue]{CritChance}%[/blue]) durante los próximos [blue]{Amount}[/blue] golpes. El daño [gold]crítico[/gold] es [blue]1.2x[/blue].",
+ "LIMBUSCORE-L_C_SINKING_POWER.title":"Hundimiento",
+ "LIMBUSCORE-L_C_SINKING_POWER.description":"Al golpear: pierdes [blue]1[/blue] de [gold]fuerza[/gold] este turno por cada [blue]5[/blue] de [gold]Potencia[/gold]. Se pierde tras un [gold]Recuento[/gold] determinado de golpes.",
+ "LIMBUSCORE-L_C_SINKING_POWER.smartDescription":"Al golpear: pierdes [blue]1[/blue] de [gold]fuerza[/gold] este turno por cada [blue]5[/blue] de [gold]Potencia[/gold]. [gold]Potencia:[/gold] [blue]{Potency}[/blue]. \n[gold]Recuento:[/gold] [blue]{Amount}[/blue], disminuye en 1 con cada activación.",
+ "LIMBUSCORE-L_C_BURN_POWER.title":"Quemadura",
+ "LIMBUSCORE-L_C_BURN_POWER.description":"Fin del turno: recibes daño igual a la [gold]Potencia[/gold]. Pierdes [blue]1[/blue] de [gold]Recuento[/gold] cada turno.",
+ "LIMBUSCORE-L_C_BURN_POWER.smartDescription":"Fin del turno: recibes [blue]{Potency}[/blue] de daño. Pierdes [blue]1[/blue] de [gold]Recuento[/gold] cada turno.",
+ "LIMBUSCORE-L_C_BLEED_POWER.title":"Sangrado",
+ "LIMBUSCORE-L_C_BLEED_POWER.description":"Recibes daño igual a la [gold]Potencia[/gold] cada vez que esta unidad ataca. Pierdes [blue]1[/blue] de [gold]Recuento[/gold] con cada ataque.",
+ "LIMBUSCORE-L_C_BLEED_POWER.smartDescription":"Recibes [blue]{Potency}[/blue] de daño cada vez que esta unidad ataca. Pierdes [blue]1[/blue] de [gold]Recuento[/gold] con cada ataque.",
+ "LIMBUSCORE-L_C_PARALYZE_POWER.title":"Parálisis",
+ "LIMBUSCORE-L_C_PARALYZE_POWER.description":"Cada acumulación de Parálisis reduce el próximo daño infligido en [blue]30%[/blue]. Se quita tras activarse.",
+ "LIMBUSCORE-L_C_PARALYZE_POWER.smartDescription":"Reduce el próximo daño infligido en [blue]{DamageReduction}%[/blue]. Se quita tras activarse.",
+ "LIMBUSCORE-L_C_PROTECTION_POWER.title":"Protección",
+ "LIMBUSCORE-L_C_PROTECTION_POWER.description":"Recibes [blue]-10%[/blue] de daño por acumulación este turno (máx. [blue]100%[/blue]).",
+ "LIMBUSCORE-L_C_PROTECTION_POWER.smartDescription":"Recibes [blue]-10%[/blue] de daño por acumulación este turno (máx. [blue]100%[/blue]).",
+ "LIMBUSCORE-L_C_PROTECTION_NEXT_TURN.title":"Protección el próximo turno",
+ "LIMBUSCORE-L_C_PROTECTION_NEXT_TURN.description":"Obtienes [gold]Protección[/gold] el próximo turno.",
+ "LIMBUSCORE-L_C_PROTECTION_NEXT_TURN.smartDescription":"Obtienes [blue]{Amount}[/blue] de [gold]Protección[/gold] el próximo turno.",
+ "LIMBUSCORE-L_C_GLOOMING_POWER.title":"Penumbra",
+ "LIMBUSCORE-L_C_GLOOMING_POWER.description":"El [gold]Hundimiento[/gold] ahora inflige daño. Al golpear: recibes [blue]1[/blue] de daño por cada [blue]5[/blue] de [gold]Potencia de Hundimiento[/gold].",
+ "LIMBUSCORE-L_C_GLOOMING_POWER.smartDescription":"El [gold]Hundimiento[/gold] ahora inflige daño. Al golpear: recibes [blue]1[/blue] de daño por cada [blue]5[/blue] de [gold]Potencia de Hundimiento[/gold].",
+ "LIMBUSCORE-L_C_CRIT_DMG_UP.title":"Daño Crítico Aumentado",
+ "LIMBUSCORE-L_C_CRIT_DMG_UP.description":"Obtienes +10% de Daño Crítico por acumulación.",
+ "LIMBUSCORE-L_C_CRIT_DMG_UP.smartDescription":"Aumenta el [gold]Daño Crítico[/gold] en [blue]{CritBonus}%[/blue].",
+ "LIMBUSCORE-MANG.title":"Mang (望)",
+ "LIMBUSCORE-MANG.description":"Las [gold]Cartas Especiales[/gold] infligen daño extra. Obtienes [gold]fuerza temporal[/gold].",
+ "LIMBUSCORE-MANG.smartDescription":"Las [gold]Cartas Especiales[/gold] infligen [blue]{DamageBonus}%[/blue] de daño extra. Obtienes [blue]{TempStr}[/blue] de [gold]fuerza temporal[/gold]. Máx. [blue]3[/blue].",
+ "LIMBUSCORE-L_C_TREMOR_POWER.title":"Temblor",
+ "LIMBUSCORE-L_C_TREMOR_POWER.description":"",
+ "LIMBUSCORE-L_C_TREMOR_POWER.smartDescription":"",
+ "LIMBUSCORE-L_C_TREMOR_BURST.title":"Estallido de Temblor",
+ "LIMBUSCORE-L_C_TREMOR_BURST.description":"",
+ "LIMBUSCORE-L_C_TREMOR_BURST.smartDescription":"",
+ "LIMBUSCORE-L_C_STAGGER_POWER.title":"Tambaleo",
+ "LIMBUSCORE-L_C_STAGGER_POWER.description":"",
+ "LIMBUSCORE-L_C_STAGGER_POWER.smartDescription":"",
+ "LIMBUSCORE-L_C_TREMOR_SCORCH.title":"Temblor - Chamuscar",
+ "LIMBUSCORE-L_C_TREMOR_SCORCH.description":"",
+ "LIMBUSCORE-L_C_TREMOR_SCORCH.smartDescription":"",
+}
+json.dump(powers, open(os.path.join(P,"powers.json"),"w",encoding="utf-8"), ensure_ascii=False, indent=2)
+tips = {
+ "LIMBUS_SANITY.title":"Punto de Cordura (PC)",
+ "LIMBUS_SANITY.description":"Ganas PC igual al [blue]100%[/blue] del daño infligido.\nPierdes PC igual al [red]200%[/red] del daño recibido.\nGanas [blue]5[/blue] PC al matar.\nCon menos de [red]0[/red] PC: tiene una probabilidad de infligir menos daño.\nA [red]-30[/red] PC: entra en [red]Pánico[/red].\nDe [red]-35[/red] a [red]-45[/red] PC: tiene una probabilidad de saltarse el turno por completo.",
+ "LIMBUS_HEADHITS.title":"Golpes a la Cabeza",
+ "LIMBUS_HEADHITS.description":"Activa efectos de bonificación con una probabilidad de PC + 50.",
+}
+json.dump(tips, open(os.path.join(P,"static_hover_tips.json"),"w",encoding="utf-8"), ensure_ascii=False, indent=2)
+# card_keywords.json y relics.json estaban vacios en src -> copiar vacios si existen
+for empty in ["card_keywords.json","relics.json"]:
+    src=os.path.join(os.path.dirname(P),"src",empty)
+    if os.path.exists(src):
+        json.dump(json.load(open(src,encoding="utf-8-sig")), open(os.path.join(P,empty),"w",encoding="utf-8"), ensure_ascii=False, indent=2)
+print("LimbusCore esp traducido")

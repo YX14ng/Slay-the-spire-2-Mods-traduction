@@ -1,4 +1,21 @@
 # Archivos que superan el limite de 100 MB de GitHub (no se pueden subir).
 # Quedan solo en local; para distribuirlos usar GitHub Releases (hasta 2 GB) o un enlace externo.
 Traducidos/Manosaba/Manosaba.pck
+Traducidos/Mordekaiser/Mordekaiser.pck
 _translation_work/Manosaba_esp.pck
+
+# Carpeta de originales SIN traducir (redundante: las versiones traducidas estan en Traducidos/).
+Por_traducir/
+
+# Scratch de trabajo: extracciones del juego base, pcks temporales reempacados, volcados y zips.
+# Se conservan solo los scripts .py y el manifest para reproducibilidad.
+_translation_work/pendientes/
+_translation_work/basegame/
+_translation_work/*.pck
+_translation_work/*.txt
+_translation_work/*.zip
+
+# Python compilado / cache
+__pycache__/
+*.pyc
+_translation_work/card_weights.cfg
