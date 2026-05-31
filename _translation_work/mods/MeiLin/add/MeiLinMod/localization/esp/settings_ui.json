@@ -1,0 +1,6 @@
+{
+  "MEILINMOD.mod_title": "MeiLinMod",
+  "MEILINMOD-CARD_VISUALS.title": "Visuales de Cartas",
+  "MEILINMOD-USE_CHAOS_CARD_DYNAMIC_PORTRAITS.title": "Activar estilo de carta Chaos",
+  "MEILINMOD-USE_CHAOS_CARD_DYNAMIC_PORTRAITS.hover.desc": "Activado por defecto. Cuando está activado, las cartas elegibles usan el marco Chaos y el retrato dinámico Spine. Cuando está desactivado, usan la versión normal."
+}

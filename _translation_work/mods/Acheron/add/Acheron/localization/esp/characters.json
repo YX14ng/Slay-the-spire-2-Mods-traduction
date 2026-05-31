@@ -1,0 +1,17 @@
+{
+  "ACHERON-ACHERON_CHARACTER.title": "Acheron",
+  "ACHERON-ACHERON_CHARACTER.titleObject": "Acheron",
+  "ACHERON-ACHERON_CHARACTER.description": "Una errante solitaria que se hace llamar «Vagabunda de los Mares». De hablar frío; su verdadero nombre se desconoce.",
+  "ACHERON-ACHERON_CHARACTER.possessiveAdjective": "su",
+  "ACHERON-ACHERON_CHARACTER.pronounObject": "su",
+  "ACHERON-ACHERON_CHARACTER.pronounPossessive": "su",
+  "ACHERON-ACHERON_CHARACTER.pronounSubject": "ella",
+  "ACHERON-ACHERON_CHARACTER.aromaPrinciple": "[sine][red]...lo que debo cortar... es el karma de este mundo flotante.[/red][/sine]",
+  "ACHERON-ACHERON_CHARACTER.cardsModifierDescription": "Las cartas de Acheron ahora aparecerán en recompensas y tiendas.",
+  "ACHERON-ACHERON_CHARACTER.cardsModifierTitle": "Cartas de Acheron",
+  "ACHERON-ACHERON_CHARACTER.eventDeathPrevention": "Aún no... el karma todavía no está cortado.",
+  "ACHERON-ACHERON_CHARACTER.goldMonologue": "[sine]Riquezas mundanas, polvo para mí...[/sine]",
+  "ACHERON-ACHERON_CHARACTER.unlockText": "Juega una partida para desbloquear este personaje.",
+  "ACHERON-ACHERON_CHARACTER.banter.alive.endTurnPing": ".......",
+  "ACHERON-ACHERON_CHARACTER.banter.dead.endTurnPing": "......."
+}

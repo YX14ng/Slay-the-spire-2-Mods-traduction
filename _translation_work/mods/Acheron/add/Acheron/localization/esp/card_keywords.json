@@ -1,0 +1,22 @@
+{
+  "ACHERON-SLASHED_DREAM.title": "Sueño Acuchillado",
+  "ACHERON-SLASHED_DREAM.description": "El contador central de Acheron. Se acumula al jugar [gold]Sello Bermellón[/gold] / [gold]Tajo Lunar[/gold], etc. Cuando el Sueño Acuchillado llega a 9, puedes jugar [gold]Desenvainar[/gold] para activar un [gold]Golpe Final[/gold].",
+  "ACHERON-CRIMSON_KNOT.title": "Nudo Carmesí",
+  "ACHERON-CRIMSON_KNOT.description": "Perjuicio-reserva en el enemigo. Ciertas cartas pueden consumirlo para infligir daño extra, obtener bloqueo, obtener energía o aplicar vulnerabilidad.",
+  "ACHERON-FINAL_STRIKE.title": "Golpe Final",
+  "ACHERON-FINAL_STRIKE.description": "Desaparece tras jugarse o al final del turno.\nUn golpe decisivo activado por [gold]Desenvainar[/gold].",
+  "ACHERON-GUIDANCE.title": "Guía",
+  "ACHERON-GUIDANCE.description": "Mecánica de activación probabilística. Cada carta con Guía tira una vez con un 20 % × multiplicador de probabilidad. Al activarse, ejecuta el efecto de la rama de Guía de la carta. Cada [gold]Noche Eterna[/gold] en la mano añade +5 % de probabilidad.",
+  "ACHERON-KARMA.title": "Karma",
+  "ACHERON-KARMA.description": "Carta de estado. Injugable. Al final de tu turno, se quema y te inflige 3 de daño.",
+  "ACHERON-FATE_END.title": "Fin del Destino",
+  "ACHERON-FATE_END.description": "Carta de estado. Injugable. Al final de tu turno, se quema y obtienes 1 de [gold]Sueño Acuchillado[/gold]. Ciertas cartas pueden consumirla.",
+  "ACHERON-ETERNAL_NIGHT.title": "Noche Eterna",
+  "ACHERON-ETERNAL_NIGHT.description": "Carta de estado. Injugable. No desaparece por sí sola. Mientras esté en la mano, cada copia añade +5 % de probabilidad de [gold]Guía[/gold]. Ciertas cartas pueden consumirla.",
+  "ACHERON-VOID_MASTERY.title": "Maestría del Vacío",
+  "ACHERON-VOID_MASTERY.description": "Cuando una carta con evanescencia y esta etiqueta se quema al final del turno sin haberse jugado, activa un efecto adicional.",
+  "ACHERON-EIDOLON.title": "Sistema de Eidolons",
+  "ACHERON-EIDOLON.description": "Después de cada combate, puedes saltar la recompensa de cartas para robar 1 [color=purple]Eidolon[/color]. 30 % de probabilidad de obtenerlo. Máximo 6 [color=purple]Eidolons[/color] desbloqueados.\n(Nota del autor: no te obsesiones con los Eidolons y te olvides de juntar cartas de defensa).",
+  "ACHERON-ASTRAY.title": "Extravío",
+  "ACHERON-ASTRAY.description": "Ya sabes: los perdidos son los más fuertes. Cuando una carta entra a tu mano, tiene un [blue]50 %[/blue] de probabilidad de [gold]extraviarse[/gold], desbloqueando un efecto extra."
+}

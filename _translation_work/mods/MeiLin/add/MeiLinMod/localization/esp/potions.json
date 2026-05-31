@@ -1,0 +1,5 @@
+{
+  "MEILINMOD-YU_JIN_POTION.title": "Poción de Brasa",
+  "MEILINMOD-YU_JIN_POTION.description": "Aplica {Ember:diff()} de [gold]Brasa[/gold] a un enemigo.",
+  "MEILINMOD-YU_JIN_POTION.selectionScreenPrompt": "Elige un enemigo"
+}

@@ -1,0 +1,13 @@
+{
+  "KAFKA-PURSUIT.title": "Pursuit",
+  "KAFKA-PURSUIT.description": "Triggers when the card you play is a different type than the last card played this turn.",
+  "KAFKA-DETONATE.title": "Detonate",
+  "KAFKA-DETONATE.description": "Trigger all Shock on target, each dealing its damage. Shock is not consumed.",
+  "KAFKA-REWRITE.title": "Rewrite",
+  "KAFKA-REWRITE.description": "Select an Attack or Skill card, then choose from 3 random cards of the opposite type to replace it. Power and Status cards cannot be Rewritten. Replacement lasts this combat only.",
+  "KAFKA-REWRITE_SELECT_PROMPT": "Select a card to Rewrite",
+  "KAFKA-REWRITE_PICK_PROMPT": "Choose a replacement",
+  "KAFKA-STRANGE_LETTER_PROMPT": "Select a Rewritten card to exhaust",
+  "KAFKA-KAFKA_EIDOLON.title": "Eidolon",
+  "KAFKA-KAFKA_EIDOLON.description": "After each combat, you may skip the card reward to draw [blue]1[/blue] [color=purple]Eidolon[/color], unlocked in order E1 → E6, up to [blue]6[/blue] total.\n(Tip: the chance ramps up with each attempt — soft pity.)"
+}

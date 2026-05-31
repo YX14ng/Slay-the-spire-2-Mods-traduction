@@ -1,0 +1,22 @@
+{
+  "ACHERON-SLASHED_DREAM.title": "Slashed Dream",
+  "ACHERON-SLASHED_DREAM.description": "Acheron's core counter. Accumulated by playing [gold]Vermilion Seal[/gold] / [gold]Moon Slash[/gold] etc. When Slashed Dream reaches 9, you can play [gold]Draw Sword[/gold] to trigger a [gold]Final Strike[/gold].",
+  "ACHERON-CRIMSON_KNOT.title": "Crimson Knot",
+  "ACHERON-CRIMSON_KNOT.description": "Enemy resource bank debuff. Can be consumed by certain cards to deal bonus damage, gain Block, gain Energy, or apply Vulnerable.",
+  "ACHERON-FINAL_STRIKE.title": "Final Strike",
+  "ACHERON-FINAL_STRIKE.description": "Vanishes after being played or at end of turn.\nA decisive strike triggered by [gold]Draw Sword[/gold].",
+  "ACHERON-GUIDANCE.title": "Guidance",
+  "ACHERON-GUIDANCE.description": "Probability trigger mechanic. Each Guidance card rolls once at 20% × multiplier chance. On trigger, executes the card's Guidance branch effect. Each [gold]Eternal Night[/gold] in hand adds +5% chance.",
+  "ACHERON-KARMA.title": "Karma",
+  "ACHERON-KARMA.description": "Status card. Unplayable. At the end of your turn, it is burned and deals 3 damage to you.",
+  "ACHERON-FATE_END.title": "Fate End",
+  "ACHERON-FATE_END.description": "Status card. Unplayable. At the end of your turn, it is burned and you gain 1 [gold]Slashed Dream[/gold]. Can be consumed by certain cards.",
+  "ACHERON-ETERNAL_NIGHT.title": "Eternal Night",
+  "ACHERON-ETERNAL_NIGHT.description": "Status card. Unplayable. Does not naturally vanish. While in hand, each copy adds +5% [gold]Guidance[/gold] chance. Can be consumed by certain cards.",
+  "ACHERON-VOID_MASTERY.title": "Void Mastery",
+  "ACHERON-VOID_MASTERY.description": "When an Ethereal card with this tag is burned at end of turn without being played, it triggers an additional effect.",
+  "ACHERON-EIDOLON.title": "Eidolon System",
+  "ACHERON-EIDOLON.description": "After each combat, you can skip the card reward to draw 1 [color=purple]Eidolon[/color]. 30% chance to obtain. Max 6 [color=purple]Eidolons[/color] unlocked.\n(Author's note: don't get too greedy chasing Eidolons and forget to pick up defense cards.)",
+  "ACHERON-ASTRAY.title": "Astray",
+  "ACHERON-ASTRAY.description": "You know — the lost ones are the strongest. When a card enters your hand, it has a [blue]50%[/blue] chance to go [gold]Astray[/gold], unlocking an extra effect."
+}

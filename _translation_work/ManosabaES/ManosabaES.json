@@ -1,0 +1,15 @@
+{
+  "id": "ManosabaES",
+  "name": "Manosaba - Español (Latinoamérica)",
+  "pck_name": "ManosabaES",
+  "author": "Traducción ES-LATAM",
+  "description": "Traducción al español (Latinoamérica) del mod Manosaba.\nAgrega el idioma 'esp' sin modificar el .pck original. Requiere Manosaba instalado y el juego en Español (Latinoamérica).",
+  "version": "v1.0.0",
+  "has_pck": true,
+  "has_dll": false,
+  "dependencies": [
+    "BaseLib",
+    "Manosaba"
+  ],
+  "affects_gameplay": false
+}

@@ -1,0 +1,17 @@
+{
+  "ACHERON-ACHERON_CHARACTER.title": "Acheron",
+  "ACHERON-ACHERON_CHARACTER.titleObject": "Acheron",
+  "ACHERON-ACHERON_CHARACTER.description": "A solitary drifter who calls herself \"Wanderer of the Seas\". Cold-spoken; her true name unknown.",
+  "ACHERON-ACHERON_CHARACTER.possessiveAdjective": "her",
+  "ACHERON-ACHERON_CHARACTER.pronounObject": "her",
+  "ACHERON-ACHERON_CHARACTER.pronounPossessive": "hers",
+  "ACHERON-ACHERON_CHARACTER.pronounSubject": "she",
+  "ACHERON-ACHERON_CHARACTER.aromaPrinciple": "[sine][red]...what I must sever... is the karma of this floating world.[/red][/sine]",
+  "ACHERON-ACHERON_CHARACTER.cardsModifierDescription": "Acheron cards will now appear in rewards and shops.",
+  "ACHERON-ACHERON_CHARACTER.cardsModifierTitle": "Acheron Cards",
+  "ACHERON-ACHERON_CHARACTER.eventDeathPrevention": "Not yet... the karma is not yet severed.",
+  "ACHERON-ACHERON_CHARACTER.goldMonologue": "[sine]Worldly riches, dust to me...[/sine]",
+  "ACHERON-ACHERON_CHARACTER.unlockText": "Play a single run to unlock this character.",
+  "ACHERON-ACHERON_CHARACTER.banter.alive.endTurnPing": ".......",
+  "ACHERON-ACHERON_CHARACTER.banter.dead.endTurnPing": "......."
+}

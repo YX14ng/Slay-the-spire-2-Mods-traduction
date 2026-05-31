@@ -1,0 +1,20 @@
+{
+  "THE_ARCHITECT.talk.ACHERON-ACHERON_CHARACTER.0-0.ancient": "Another one treads the tower. Exiled bladesbearer, for whom do you come?",
+  "THE_ARCHITECT.talk.ACHERON-ACHERON_CHARACTER.0-0.next": "Respond",
+  "THE_ARCHITECT.talk.ACHERON-ACHERON_CHARACTER.0-1.char": "For no one. Only — to sever every cause, and gaze upon the void.",
+  "THE_ARCHITECT.talk.ACHERON-ACHERON_CHARACTER.0-1.next": "Continue",
+  "THE_ARCHITECT.talk.ACHERON-ACHERON_CHARACTER.0-2.ancient": "This tower is woven of eternity. How many floors can one blade cut?",
+  "THE_ARCHITECT.talk.ACHERON-ACHERON_CHARACTER.0-attack": "Both",
+
+  "THE_ARCHITECT.talk.ACHERON-ACHERON_CHARACTER.1-0.char": "The tower still stands. I cut too shallow last time.",
+  "THE_ARCHITECT.talk.ACHERON-ACHERON_CHARACTER.1-0.next": "Continue",
+  "THE_ARCHITECT.talk.ACHERON-ACHERON_CHARACTER.1-1.ancient": "Order does not break by a single stroke. You loop in vain.",
+  "THE_ARCHITECT.talk.ACHERON-ACHERON_CHARACTER.1-1.next": "Respond",
+  "THE_ARCHITECT.talk.ACHERON-ACHERON_CHARACTER.1-2.char": "Looping is itself causality — and that is what I have come to sever.",
+  "THE_ARCHITECT.talk.ACHERON-ACHERON_CHARACTER.1-attack": "Both",
+
+  "THE_ARCHITECT.talk.ACHERON-ACHERON_CHARACTER.2-0r.ancient": "Each return, the karma on your blade grows heavier.",
+  "THE_ARCHITECT.talk.ACHERON-ACHERON_CHARACTER.2-0r.next": "Respond",
+  "THE_ARCHITECT.talk.ACHERON-ACHERON_CHARACTER.2-1r.char": "Slashed Dream runs thin. Time to let this tower see its true end.",
+  "THE_ARCHITECT.talk.ACHERON-ACHERON_CHARACTER.2-attack": "Player"
+}

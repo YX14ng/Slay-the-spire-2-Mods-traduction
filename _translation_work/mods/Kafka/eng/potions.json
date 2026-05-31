@@ -1,0 +1,8 @@
+{
+  "KAFKA-SHOCK_POTION.title": "Shock Potion",
+  "KAFKA-SHOCK_POTION.description": "Apply [gold]Shock[/gold] (6 damage, 3 turns) to target enemy.",
+  "KAFKA-PURSUIT_POTION.title": "Pursuit Potion",
+  "KAFKA-PURSUIT_POTION.description": "This turn, whenever you trigger [gold]Pursuit[/gold], choose a hand card to [gold]Rewrite[/gold].",
+  "KAFKA-REWRITE_INK.title": "Rewrite Ink",
+  "KAFKA-REWRITE_INK.description": "Choose 1 card in hand to [gold]Rewrite[/gold]. Then randomly Rewrite 1 card from draw pile and 1 from discard pile."
+}

@@ -1,0 +1,145 @@
+# -*- coding: utf-8 -*-
+"""Lote 1: archivos que definen terminos + contenido pequeno. Escribe esp/ con traducciones.
+Respeta escapes: '\\n' literal (orbs) vs '\n' salto real (cartas)."""
+import json, os
+ESP = r"f:/Programs/Slay-the-spire-2-Mods-traduction/_translation_work/add/Manosaba/localization/esp"
+
+card_keywords = {
+  "MANOSABA-UNIQUE.title": "Única",
+  "MANOSABA-UNIQUE.description": "Solo puedes tener una copia de esta carta en tu mazo.",
+  "MANOSABA-MAHOU.title": "Mahou",
+  "MANOSABA-MAHOU.description": "Magia nacida de la infección de bruja; su potencia escala con tu Majoka.",
+  "MANOSABA-HIGH_STANCE.title": "Postura Alta",
+  "MANOSABA-HIGH_STANCE.description": "Cambias a Postura Alta.",
+  "MANOSABA-MID_STANCE.title": "Postura Media",
+  "MANOSABA-MID_STANCE.description": "Cambias a Postura Media.",
+  "MANOSABA-LOW_STANCE.title": "Postura Baja",
+  "MANOSABA-LOW_STANCE.description": "Cambias a Postura Baja.",
+  "MANOSABA-GUN_SHOT.title": "Disparo",
+  "MANOSABA-GUN_SHOT.description": "Gastas balas para atacar. Las balas que te quedan se muestran en el [gold]Arma de Nanoka[/gold].",
+  "MANOSABA-COMBUST.title": "Combustión",
+  "MANOSABA-COMBUST.description": "Cada vez que robas esta carta, su valor de Combustión disminuye en 1.\nAl llegar a 0, se juega automáticamente, obtienes 1 [gold]Enjambre de Bolas de Fuego[/gold] y vuelve a su valor de Combustión inicial.",
+  "MANOSABA-COMBUST_IGNITE.title": "Ignición",
+  "MANOSABA-COMBUST_IGNITE.description": "Eliges una carta con [gold]Combustión[/gold] y reduces su cuenta regresiva actual en 1.",
+  "MANOSABA-SHARED.title": "Compartida",
+  "MANOSABA-SHARED.description": "Obtenida al compartir.",
+  "MANOSABA-BETA.title": "Beta",
+  "MANOSABA-BETA.description": "Esta carta aún está en pruebas y puede tener problemas.",
+  "MANOSABA-SWORD_TECHNIQUE.title": "Técnica de Espada",
+  "MANOSABA-SWORD_TECHNIQUE.description": "Una técnica de espada.",
+  "MANOSABA-TWO_SWORDS.title": "Dos Espadas",
+  "MANOSABA-TWO_SWORDS.description": "Requiere [gold]Dos Espadas[/gold] para jugarse.",
+  "MANOSABA-SEKKETSUSOUJITSU.title": "Manipulación de Sangre",
+  "MANOSABA-SEKKETSUSOUJITSU.description": "Las cartas de Ataque/Habilidad de este tipo descargan 1 [gold]Orbe de Sangre[/gold] y obtienen daño/bloqueo por un valor equivalente al valor pasivo de ese orbe.\nSi tu mazo contiene una carta de este tipo, cada vez que pierdes PV por daño, tienes un 50 % de probabilidad de canalizar un [gold]Orbe de Sangre[/gold] con capas equivalentes a los PV perdidos.",
+}
+
+static_hover_tips = {
+  "MANOSABA-POTION_CRAFT_FORMULA.title": "Fórmula de Elaboración de Pociones",
+  "MANOSABA-KOTODAMA_ENERGY.title": "Energía de Kotodama",
+  "MANOSABA-KOTODAMA_ENERGY.description": "Poder textual generado a través de la magia de Anan.",
+  "MANOSABA-KOTODAMA_NOT_ENOUGH": "No tengo suficiente Kotodama.",
+}
+
+monsters = {
+  "MANOSABA-SAKURABA_EMA_DOG.name": "¿Sakuraba Ema?",
+  "MANOSABA-JAILER.name": "Carcelero",
+  "MANOSABA-BASEMENT_GUARDIAN.name": "Guardián",
+  "MANOSABA-NOVEL_FLAME_RABBIT.name": "Conejo Escupefuego",
+  "MANOSABA-NOVEL_HOLY_WHITE_SNAKE.name": "Sagrada Serpiente Blanca",
+  "MANOSABA-NOVEL_CLAWED_COCKATRICE.name": "Cocatriz con Garras",
+  "MANOSABA-NOVEL_CRIMSON_VALSTRAX.name": "Valstrax Carmesí",
+}
+
+events = {
+  "MANOSABA-BASEMENT_EXPLORATION_EVENT.loss": "{character} intentó reclamar la Espada Ritual en [gold]{event}[/gold], pero el carcelero se impuso.",
+  "MANOSABA-BASEMENT_EXPLORATION_EVENT.title": "Exploración del Sótano",
+  "MANOSABA-BASEMENT_EXPLORATION_EVENT.pages.INITIAL.description": "Abres la caja fuerte y sacas la espada guardada en su interior.\nEs lo que necesitas para salvar a Ema y a las demás.\nCon la hoja en mano, regresas hacia las celdas… cuando un carcelero te cierra el paso.",
+  "MANOSABA-BASEMENT_EXPLORATION_EVENT.pages.INITIAL.options.ESCAPE.title": "Soltar la espada y huir",
+  "MANOSABA-BASEMENT_EXPLORATION_EVENT.pages.INITIAL.options.ESCAPE.description": "Pierdes [red]5[/red] PV. Quita una carta de tu mazo.",
+  "MANOSABA-BASEMENT_EXPLORATION_EVENT.pages.INITIAL.options.FIGHT.title": "Pelear",
+  "MANOSABA-BASEMENT_EXPLORATION_EVENT.pages.INITIAL.options.FIGHT.description": "Pelea para conservar la espada.",
+  "MANOSABA-BASEMENT_EXPLORATION_EVENT.pages.ESCAPE.description": "Huyes presa del pánico, pagas con sangre y dejas atrás la espada.",
+  "MANOSABA-BASEMENT_EXPLORATION_EVENT.pages.VICTORY.description": "Derrotas al carcelero y tomas la [gold]Espada Ritual[/gold] de la caja fuerte.",
+  "MANOSABA-BASEMENT_EXPLORATION_EVENT.pages.FAIL.description": "No logras derrotar al carcelero; dejas atrás la espada y escapas: no obtienes nada.",
+}
+
+# orbs: smartDescription usa '\\n' LITERAL (backslash-n), no salto real
+orbs = {
+  "RED_PAINT_ORB.title": "Orbe de Pintura Roja",
+  "RED_PAINT_ORB.description": "Orbe: inflige daño a los enemigos.",
+  "RED_PAINT_ORB.smartDescription": "[gold]Pasiva:[/gold] al final del turno, infliges [blue]{Passive}[/blue] de daño a un enemigo aleatorio.\\n[gold]Descarga:[/gold] infliges [blue]{Evoke}[/blue] de daño a todos los enemigos.",
+  "BLUE_PAINT_ORB.title": "Orbe de Pintura Azul",
+  "BLUE_PAINT_ORB.description": "Orbe: otorga bloqueo a ti y a un aliado aleatorio.",
+  "BLUE_PAINT_ORB.smartDescription": "[gold]Pasiva:[/gold] al final del turno, obtienes [blue]{Passive}[/blue] de [gold]bloqueo[/gold].\\n[gold]Descarga:[/gold] otorgas [blue]{Evoke}[/blue] de [gold]bloqueo[/gold] a ti y a un aliado aleatorio.",
+  "YELLOW_PAINT_ORB.title": "Orbe de Pintura Amarilla",
+  "YELLOW_PAINT_ORB.description": "Orbe: genera energía para ti y un aliado aleatorio.",
+  "YELLOW_PAINT_ORB.smartDescription": "[gold]Pasiva:[/gold] al inicio del turno, obtienes {Passive:energyIcons()}.\\n[gold]Descarga:[/gold] otorgas {Evoke:energyIcons()} a ti y a un aliado aleatorio.",
+  "ORANGE_PAINT_ORB.title": "Orbe de Pintura Naranja",
+  "ORANGE_PAINT_ORB.description": "Orbe: aplica quemadura a los enemigos.",
+  "ORANGE_PAINT_ORB.smartDescription": "[gold]Pasiva:[/gold] al final del turno, aplicas [blue]{Passive}[/blue] de [gold]quemadura[/gold] a un enemigo aleatorio.\\n[gold]Descarga:[/gold] aplicas [blue]{Evoke}[/blue] de [gold]quemadura[/gold] a todos los enemigos.",
+  "GREEN_PAINT_ORB.title": "Orbe de Pintura Verde",
+  "GREEN_PAINT_ORB.description": "Orbe: aplica veneno a los enemigos.",
+  "GREEN_PAINT_ORB.smartDescription": "[gold]Pasiva:[/gold] al final del turno, aplicas [blue]{Passive}[/blue] de [gold]veneno[/gold] a un enemigo aleatorio.\\n[gold]Descarga:[/gold] aplicas [blue]{Evoke}[/blue] de [gold]veneno[/gold] a todos los enemigos.",
+  "PURPLE_PAINT_ORB.title": "Orbe de Pintura Morada",
+  "PURPLE_PAINT_ORB.description": "Orbe: aplica condena a los enemigos.",
+  "PURPLE_PAINT_ORB.smartDescription": "[gold]Pasiva:[/gold] al final del turno, aplicas [blue]{Passive}[/blue] de [gold]condena[/gold] a un enemigo aleatorio.\\n[gold]Descarga:[/gold] aplicas [blue]{Evoke}[/blue] de [gold]condena[/gold] a todos los enemigos.",
+  "BLACK_PAINT_ORB.title": "Orbe de Pintura Negra",
+  "BLACK_PAINT_ORB.description": "Orbe: otorga Majoka a ti y a un aliado aleatorio.",
+  "BLACK_PAINT_ORB.smartDescription": "[gold]Pasiva:[/gold] al inicio del turno, obtienes [blue]{Passive}[/blue] de [gold]Majoka[/gold].\\n[gold]Descarga:[/gold] otorgas [blue]{Evoke}[/blue] de [gold]Majoka[/gold] a ti y a un aliado aleatorio.",
+  "WHITE_PAINT_ORB.title": "Orbe de Pintura Blanca",
+  "WHITE_PAINT_ORB.description": "Orbe: roba cartas para ti y un aliado aleatorio.",
+  "WHITE_PAINT_ORB.smartDescription": "[gold]Pasiva:[/gold] al inicio del turno, robas [blue]{Passive}[/blue] carta.\\n[gold]Descarga:[/gold] tú y un aliado aleatorio roban [blue]{Evoke}[/blue] carta.",
+  "BLOOD_ORB.title": "Orbe de Sangre",
+  "BLOOD_ORB.description": "Orbe: gana capas al final del turno. Al [gold]descargarse[/gold], recupera PV.",
+  "BLOOD_ORB.smartDescription": "[gold]Pasiva:[/gold] al final del turno, este Orbe de Sangre gana 1 capa.\\n[gold]Descarga:[/gold] recuperas [blue]{Evoke}[/blue] PV.",
+}
+
+potions = {
+  "MANOSABA-LESSER_PAIN_KILLER_POTION.title": "Analgésico Menor",
+  "MANOSABA-LESSER_PAIN_KILLER_POTION.description": "Recuperas {Heal:diff()} PV. Un medicamento casi sin efectos secundarios.",
+  "MANOSABA-LESSER_PAIN_KILLER_POTION.selectionScreenPrompt": "",
+  "MANOSABA-PAIN_KILLER_POTION.title": "Analgésico",
+  "MANOSABA-PAIN_KILLER_POTION.description": "Recuperas {Heal:diff()} PV. Arisa lo recomienda de todo corazón.",
+  "MANOSABA-PAIN_KILLER_POTION.selectionScreenPrompt": "",
+  "MANOSABA-GREATER_PAIN_KILLER_POTION.title": "Analgésico Mayor",
+  "MANOSABA-GREATER_PAIN_KILLER_POTION.description": "Recuperas {Heal:diff()} PV.",
+  "MANOSABA-GREATER_PAIN_KILLER_POTION.selectionScreenPrompt": "",
+  "MANOSABA-LESSER_BLOCK_POTION.title": "Poción de Bloqueo Menor",
+  "MANOSABA-LESSER_BLOCK_POTION.description": "Obtienes {Block:diff()} de [gold]bloqueo[/gold].",
+  "MANOSABA-LESSER_BLOCK_POTION.selectionScreenPrompt": "",
+  "MANOSABA-GREATER_BLOCK_POTION.title": "Poción de Bloqueo Mayor",
+  "MANOSABA-GREATER_BLOCK_POTION.description": "Obtienes {Block:diff()} de [gold]bloqueo[/gold].",
+  "MANOSABA-GREATER_BLOCK_POTION.selectionScreenPrompt": "",
+  "MANOSABA-CATALYST.title": "Catalizador",
+  "MANOSABA-CATALYST.description": "Una poción sin efecto directo; combínala con otras pociones para elaborar otras más potentes.",
+  "MANOSABA-CATALYST.selectionScreenPrompt": "",
+  "MANOSABA-LESSER_FLEX_POTION.title": "Poción de Flexión Menor",
+  "MANOSABA-LESSER_FLEX_POTION.description": "Obtienes {StrengthPower:diff()} de [gold]fuerza[/gold]. Pierdes {StrengthPower:diff()} de [gold]fuerza[/gold] al final de tu turno.",
+  "MANOSABA-LESSER_FLEX_POTION.selectionScreenPrompt": "",
+  "MANOSABA-GREATER_BEETLE_JUICE.title": "Jugo de Escarabajo Mayor",
+  "MANOSABA-GREATER_BEETLE_JUICE.description": "Todos los enemigos infligen un {DamageDecrease}% menos de daño de ataque durante los próximos {Repeat} turno(s).",
+  "MANOSABA-GREATER_BEETLE_JUICE.selectionScreenPrompt": "",
+  "MANOSABA-GREATER_ENERGY_POTION.title": "Poción de Energía Mayor",
+  "MANOSABA-GREATER_ENERGY_POTION.description": "Obtienes {Energy:energyIcons()}.",
+  "MANOSABA-GREATER_ENERGY_POTION.selectionScreenPrompt": "",
+  "MANOSABA-GREATER_FLEX_POTION.title": "Poción de Flexión Mayor",
+  "MANOSABA-GREATER_FLEX_POTION.description": "Obtienes {StrengthPower:diff()} de [gold]fuerza[/gold].",
+  "MANOSABA-GREATER_FLEX_POTION.selectionScreenPrompt": "",
+  "MANOSABA-GREATER_WEAK_POTION.title": "Poción de Debilitamiento Mayor",
+  "MANOSABA-GREATER_WEAK_POTION.description": "Aplicas {WeakPower:diff()} de [gold]debilitamiento[/gold].",
+  "MANOSABA-GREATER_WEAK_POTION.selectionScreenPrompt": "",
+  "MANOSABA-TREDECIM.title": "Tredecim",
+  "MANOSABA-TREDECIM.description": "Si el objetivo es un personaje de Manosaba, muere. Al usarse para elaboración, puede alterar el tipo de poción de gama alta resultante.",
+  "MANOSABA-TREDECIM.selectionScreenPrompt": "",
+  "MANOSABA-VITAL_POTION.title": "Poción Vital",
+  "MANOSABA-VITAL_POTION.description": "Aumenta tus PV máx. en 5.",
+  "MANOSABA-VITAL_POTION.selectionScreenPrompt": "",
+  "MANOSABA-DRAWING_BOARD.title": "Tablero de Dibujo",
+  "MANOSABA-DRAWING_BOARD.description": "Algo en su interior no deja de moverse…",
+  "MANOSABA-DRAWING_BOARD.selectionScreenPrompt": "",
+}
+
+for name, data in [("card_keywords",card_keywords),("static_hover_tips",static_hover_tips),
+                   ("monsters",monsters),("events",events),("orbs",orbs),("potions",potions)]:
+    json.dump(data, open(os.path.join(ESP,name+".json"),"w",encoding="utf-8"), ensure_ascii=False, indent=2)
+    print(f"escrito {name}.json ({len(data)} claves)")

@@ -1,0 +1,109 @@
+{
+  "KAFKA-SHOCK_POWER.title": "Shock",
+  "KAFKA-SHOCK_POWER.description": "Deals damage at the start of the enemy's turn, then expires.",
+  "KAFKA-SHOCK_POWER.smartDescription": "Deals [blue]{Amount}[/blue] damage at the start of the enemy's turn, then expires.",
+
+  "KAFKA-DOMINATION_POWER.title": "Domination",
+  "KAFKA-DOMINATION_POWER.description": "Whenever you play an Attack, apply [gold]Shock[/gold] ([blue]1[/blue] damage, [blue]2[/blue] turns) to a random enemy.",
+  "KAFKA-DOMINATION_POWER.smartDescription": "Whenever you play an Attack, apply [gold]Shock[/gold] ([blue]{Amount}[/blue] damage, [blue]2[/blue] turns) to a random enemy.",
+
+  "KAFKA-GENTLE_BUT_CRUEL_POWER.title": "Gentle but Cruel",
+  "KAFKA-GENTLE_BUT_CRUEL_POWER.description": "Whenever you trigger [gold]Pursuit[/gold], draw [blue]1[/blue] card and gain [blue]1[/blue] [gold]Block[/gold].",
+  "KAFKA-GENTLE_BUT_CRUEL_POWER.smartDescription": "Whenever you trigger [gold]Pursuit[/gold], draw [blue]{Amount}[/blue] card(s) and gain [blue]{Amount}[/blue] [gold]Block[/gold].",
+
+  "KAFKA-SPIRIT_WHISPER_POWER.title": "Spirit Whisper",
+  "KAFKA-SPIRIT_WHISPER_POWER.description": "At the start of your turn, add [blue]1[/blue] random Attack to your hand. It costs {energyPrefix:energyIcons(0)} this turn.",
+  "KAFKA-SPIRIT_WHISPER_POWER.smartDescription": "At the start of your turn, add [blue]1[/blue] random Attack to your hand. It costs {energyPrefix:energyIcons(0)} this turn.",
+
+  "KAFKA-ETERNAL_MIDNIGHT_POWER.title": "Eternal Midnight",
+  "KAFKA-ETERNAL_MIDNIGHT_POWER.description": "At the start of your turn, [gold]Detonate[/gold] all enemies [blue]1[/blue] time.",
+  "KAFKA-ETERNAL_MIDNIGHT_POWER.smartDescription": "At the start of your turn, [gold]Detonate[/gold] all enemies [blue]{Amount}[/blue] time(s).",
+
+  "KAFKA-ENDLESS_PURSUIT_POWER.title": "Endless Pursuit",
+  "KAFKA-ENDLESS_PURSUIT_POWER.description": "Whenever you trigger [gold]Pursuit[/gold], deal [blue]1[/blue] damage to ALL enemies.",
+  "KAFKA-ENDLESS_PURSUIT_POWER.smartDescription": "Whenever you trigger [gold]Pursuit[/gold], deal [blue]{Amount}[/blue] damage to ALL enemies.",
+
+  "KAFKA-CAPRICCIO_POWER.title": "Capriccio",
+  "KAFKA-CAPRICCIO_POWER.description": "This turn, whenever you draw a card, apply [gold]Shock[/gold] ([blue]1[/blue] damage, [blue]2[/blue] turns) to a random enemy.",
+  "KAFKA-CAPRICCIO_POWER.smartDescription": "This turn, whenever you draw a card, apply [gold]Shock[/gold] ([blue]{Amount}[/blue] damage, [blue]2[/blue] turns) to a random enemy.",
+
+  "KAFKA-LEGGIERO_POWER.title": "Leggiero",
+  "KAFKA-LEGGIERO_POWER.description": "At the start of your turn, remove [blue]1[/blue] random [gold]Shock[/gold] from each enemy and gain [blue]1[/blue] [gold]Energy[/gold].",
+  "KAFKA-LEGGIERO_POWER.smartDescription": "At the start of your turn, remove [blue]1[/blue] random [gold]Shock[/gold] from each enemy and gain [blue]{Amount}[/blue] [gold]Energy[/gold].",
+
+  "KAFKA-LIGHTNING_AGENT_POWER.title": "Lightning Agent",
+  "KAFKA-LIGHTNING_AGENT_POWER.description": "The first time you apply [gold]Shock[/gold] each turn, apply it [blue]1[/blue] additional time.",
+  "KAFKA-LIGHTNING_AGENT_POWER.smartDescription": "The first time you apply [gold]Shock[/gold] each turn, apply it [blue]1[/blue] additional time.",
+
+  "KAFKA-PERFECT_RHYTHM_POWER.title": "Perfect Rhythm",
+  "KAFKA-PERFECT_RHYTHM_POWER.description": "Whenever you [gold]Detonate[/gold], all [gold]Shock[/gold] on the target gains [blue]1[/blue] damage.",
+  "KAFKA-PERFECT_RHYTHM_POWER.smartDescription": "Whenever you [gold]Detonate[/gold], all [gold]Shock[/gold] on the target gains [blue]{Amount}[/blue] damage.",
+
+  "KAFKA-STELLARON_RESONANCE_POWER.title": "Stellaron Resonance",
+  "KAFKA-STELLARON_RESONANCE_POWER.description": "At the end of your turn, all [gold]Shock[/gold] on enemies gains [blue]1[/blue] damage.",
+  "KAFKA-STELLARON_RESONANCE_POWER.smartDescription": "At the end of your turn, all [gold]Shock[/gold] on enemies gains [blue]{Amount}[/blue] damage.",
+
+  "KAFKA-TEMPORARY_STRENGTH_LOSS_POWER.title": "Strength Loss",
+  "KAFKA-TEMPORARY_STRENGTH_LOSS_POWER.description": "[gold]Strength[/gold] is temporarily reduced. Restores after [blue]1[/blue] turn.",
+  "KAFKA-TEMPORARY_STRENGTH_LOSS_POWER.smartDescription": "[gold]Strength[/gold] reduced by [blue]{Amount}[/blue]. Restores after [blue]1[/blue] turn.",
+
+  "KAFKA-TEMPORARY_DEXTERITY_LOSS_POWER.title": "Dexterity Loss",
+  "KAFKA-TEMPORARY_DEXTERITY_LOSS_POWER.description": "Lose [blue]1[/blue] [gold]Dexterity[/gold] at the end of your turn.",
+  "KAFKA-TEMPORARY_DEXTERITY_LOSS_POWER.smartDescription": "Lose [blue]{Amount}[/blue] [gold]Dexterity[/gold] at the end of your turn.",
+
+  "KAFKA-SHOCK_TOTAL_POWER.title": "Shock Damage",
+  "KAFKA-SHOCK_TOTAL_POWER.description": "At the start of the enemy's turn, takes all [gold]Shock[/gold] damage equal to the icon value.",
+  "KAFKA-SHOCK_TOTAL_POWER.smartDescription": "At the start of the enemy's turn, takes all [gold]Shock[/gold] damage equal to the icon value.",
+
+  "KAFKA-THUNDER_FORESIGHT_POWER.title": "Thunder Foresight",
+  "KAFKA-THUNDER_FORESIGHT_POWER.description": "At the start of next turn, gain [blue]1[/blue] [gold]Energy[/gold].",
+  "KAFKA-THUNDER_FORESIGHT_POWER.smartDescription": "At the start of next turn, gain [blue]{Amount}[/blue] [gold]Energy[/gold].",
+
+  "KAFKA-DA_CAPO_POWER.title": "Da Capo",
+  "KAFKA-DA_CAPO_POWER.description": "This turn, [gold]Pursuit[/gold] cards trigger their effects regardless of conditions.",
+  "KAFKA-DA_CAPO_POWER.smartDescription": "This turn, [gold]Pursuit[/gold] cards trigger their effects regardless of conditions.",
+
+  "KAFKA-SHOCK_CORE_PURSUIT_COUNT_POWER.title": "Stellaron: Pursuit",
+  "KAFKA-SHOCK_CORE_PURSUIT_COUNT_POWER.description": "Every [blue]3[/blue] [gold]Pursuit[/gold] triggers, gain [blue]1[/blue] [gold]Energy[/gold].",
+  "KAFKA-SHOCK_CORE_PURSUIT_COUNT_POWER.smartDescription": "Every [blue]3[/blue] [gold]Pursuit[/gold] triggers, gain [blue]1[/blue] [gold]Energy[/gold]. Triggered [blue]{Amount}[/blue] so far.",
+
+  "KAFKA-SHOCK_CORE_DETONATION_COUNT_POWER.title": "Stellaron: Detonation",
+  "KAFKA-SHOCK_CORE_DETONATION_COUNT_POWER.description": "Every [blue]2[/blue] [gold]Detonate[/gold] triggers, draw [blue]1[/blue] card.",
+  "KAFKA-SHOCK_CORE_DETONATION_COUNT_POWER.smartDescription": "Every [blue]2[/blue] [gold]Detonate[/gold] triggers, draw [blue]1[/blue] card. Triggered [blue]{Amount}[/blue] so far.",
+
+  "KAFKA-FATE_MANIPULATION_POWER.title": "Fate Manipulation",
+  "KAFKA-FATE_MANIPULATION_POWER.description": "Whenever you [gold]Rewrite[/gold] a card, apply [gold]Shock[/gold] ([blue]1[/blue] damage, [blue]2[/blue] turns) to a random enemy.",
+  "KAFKA-FATE_MANIPULATION_POWER.smartDescription": "Whenever you [gold]Rewrite[/gold] a card, apply [gold]Shock[/gold] ([blue]{Amount}[/blue] damage, [blue]2[/blue] turns) to a random enemy.",
+
+  "KAFKA-SCRIPT_HIJACK_POWER.title": "Script Hijack",
+  "KAFKA-SCRIPT_HIJACK_POWER.description": "The first time you trigger [gold]Pursuit[/gold] each turn, randomly [gold]Rewrite[/gold] [blue]1[/blue] card in your draw pile.",
+  "KAFKA-SCRIPT_HIJACK_POWER.smartDescription": "The first time you trigger [gold]Pursuit[/gold] each turn, randomly [gold]Rewrite[/gold] [blue]{Amount}[/blue] card(s) in your draw pile.",
+
+  "KAFKA-LOSE_ALL_BLOCK_POWER.title": "Wheel of Fate",
+  "KAFKA-LOSE_ALL_BLOCK_POWER.description": "Lose all [gold]Block[/gold] at the end of your turn.",
+  "KAFKA-LOSE_ALL_BLOCK_POWER.smartDescription": "Lose all [gold]Block[/gold] at the end of your turn.",
+
+  "KAFKA-TEMPORARY_STRENGTH_GAIN_POWER.title": "Temporary Strength",
+  "KAFKA-TEMPORARY_STRENGTH_GAIN_POWER.description": "Lose [blue]1[/blue] [gold]Strength[/gold] at the end of your turn.",
+  "KAFKA-TEMPORARY_STRENGTH_GAIN_POWER.smartDescription": "Lose [blue]{Amount}[/blue] [gold]Strength[/gold] at the end of your turn.",
+
+  "KAFKA-PURSUIT_POTION_POWER.title": "Pursuit Potion",
+  "KAFKA-PURSUIT_POTION_POWER.description": "This turn, whenever you trigger [gold]Pursuit[/gold], [gold]Rewrite[/gold] [blue]1[/blue] card in your hand.",
+  "KAFKA-PURSUIT_POTION_POWER.smartDescription": "This turn, whenever you trigger [gold]Pursuit[/gold], [gold]Rewrite[/gold] [blue]1[/blue] card in your hand.",
+
+  "KAFKA-AGENTS_CREED_POWER.title": "Agent's Creed",
+  "KAFKA-AGENTS_CREED_POWER.description": "Whenever you [gold]Detonate[/gold], there is a [blue]33[/blue]% chance to [gold]Detonate[/gold] [blue]1[/blue] additional time.",
+  "KAFKA-AGENTS_CREED_POWER.smartDescription": "Whenever you [gold]Detonate[/gold], there is a [blue]{Amount}[/blue]×[blue]33[/blue]% chance to [gold]Detonate[/gold] [blue]1[/blue] additional time.",
+
+  "KAFKA-INSIGHT_PURSUIT_POWER.title": "Insight",
+  "KAFKA-INSIGHT_PURSUIT_POWER.description": "This turn, Skills you play are [gold]Rewritten[/gold] after being played.",
+  "KAFKA-INSIGHT_PURSUIT_POWER.smartDescription": "This turn, Skills you play are [gold]Rewritten[/gold] after being played.",
+
+  "KAFKA-REST_NOTE_POWER.title": "Rest Note",
+  "KAFKA-REST_NOTE_POWER.description": "When you play a [gold]Rewritten[/gold] [gold]Pursuit[/gold] card, its [gold]Pursuit[/gold] effect triggers [blue]1[/blue] additional time.",
+  "KAFKA-REST_NOTE_POWER.smartDescription": "When you play a [gold]Rewritten[/gold] [gold]Pursuit[/gold] card, its [gold]Pursuit[/gold] effect triggers [blue]{Amount}[/blue] additional time(s).",
+
+  "KAFKA-I_PRAISE_IMPROVISE_POWER.title": "I Praise, Improvise",
+  "KAFKA-I_PRAISE_IMPROVISE_POWER.description": "This turn, [gold]Pursuit[/gold] effects trigger [blue]1[/blue] additional time.",
+  "KAFKA-I_PRAISE_IMPROVISE_POWER.smartDescription": "This turn, [gold]Pursuit[/gold] effects trigger [blue]{Amount}[/blue] additional time(s)."
+}

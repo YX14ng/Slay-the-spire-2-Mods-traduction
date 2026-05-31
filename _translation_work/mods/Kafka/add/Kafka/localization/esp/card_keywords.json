@@ -1,0 +1,13 @@
+{
+  "KAFKA-PURSUIT.title": "Persecución",
+  "KAFKA-PURSUIT.description": "Se activa cuando la carta que juegas es de un tipo distinto al de la última carta jugada este turno.",
+  "KAFKA-DETONATE.title": "Detonar",
+  "KAFKA-DETONATE.description": "Activa toda la Electrocución del objetivo; cada una inflige su daño. La Electrocución no se consume.",
+  "KAFKA-REWRITE.title": "Reescribir",
+  "KAFKA-REWRITE.description": "Selecciona una carta de Ataque o Habilidad, luego elige entre 3 cartas al azar del tipo opuesto para reemplazarla. Las cartas de Poder y de Estado no pueden reescribirse. El reemplazo dura solo este combate.",
+  "KAFKA-REWRITE_SELECT_PROMPT": "Selecciona una carta para Reescribir",
+  "KAFKA-REWRITE_PICK_PROMPT": "Elige un reemplazo",
+  "KAFKA-STRANGE_LETTER_PROMPT": "Selecciona una carta Reescrita para agotar",
+  "KAFKA-KAFKA_EIDOLON.title": "Eidolon",
+  "KAFKA-KAFKA_EIDOLON.description": "Después de cada combate, puedes saltar la recompensa de cartas para robar [blue]1[/blue] [color=purple]Eidolon[/color], desbloqueado en orden E1 → E6, hasta [blue]6[/blue] en total.\n(Consejo: la probabilidad aumenta con cada intento — piedad blanda)."
+}

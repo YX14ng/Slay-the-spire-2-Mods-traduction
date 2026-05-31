@@ -1,0 +1,11 @@
+{
+  "id": "Acheron",
+  "name": "Acheron",
+  "author": "草食系妹控",
+  "description": "崩坏：星穹铁道 黄泉 自定义角色MOD。",
+  "version": "v0.4.4",
+  "has_pck": true,
+  "has_dll": true,
+  "dependencies": [],
+  "affects_gameplay": true
+}

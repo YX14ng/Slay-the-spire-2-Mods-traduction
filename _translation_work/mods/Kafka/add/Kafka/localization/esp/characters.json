@@ -1,0 +1,16 @@
+{
+  "KAFKA-KAFKA_CHARACTER.title": "Kafka",
+  "KAFKA-KAFKA_CHARACTER.titleObject": "Kafka",
+  "KAFKA-KAFKA_CHARACTER.description": "Una Cazadora de Estelarones que teje el destino mediante Electrocución y Persecución.",
+  "KAFKA-KAFKA_CHARACTER.pronounObject": "su",
+  "KAFKA-KAFKA_CHARACTER.possessiveAdjective": "su",
+  "KAFKA-KAFKA_CHARACTER.pronounPossessive": "su",
+  "KAFKA-KAFKA_CHARACTER.pronounSubject": "ella",
+  "KAFKA-KAFKA_CHARACTER.goldMonologue": "El espacio-tiempo es casi infinito y, sin embargo, aquí estamos, encontrándonos en este preciso instante.",
+  "KAFKA-KAFKA_CHARACTER.eventDeathPrevention": "Kafka se negó a caer aquí.",
+  "KAFKA-KAFKA_CHARACTER.aromaPrinciple": "El aroma de los arcos púrpura persiste en el aire.",
+  "KAFKA-KAFKA_CHARACTER.cardsModifierTitle": "Cartas de Kafka",
+  "KAFKA-KAFKA_CHARACTER.cardsModifierDescription": "El repertorio de cartas personalizado de Kafka.",
+  "KAFKA-KAFKA_CHARACTER.banter.alive.endTurnPing": "Cada elección tiene sus consecuencias.",
+  "KAFKA-KAFKA_CHARACTER.banter.dead.endTurnPing": "..."
+}
