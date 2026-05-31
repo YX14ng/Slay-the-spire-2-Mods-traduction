@@ -2,6 +2,10 @@
 # Quedan solo en local; para distribuirlos usar GitHub Releases (hasta 2 GB) o un enlace externo.
 Traducidos/Manosaba/Manosaba.pck
 Traducidos/Mordekaiser/Mordekaiser.pck
+Traducidos/Honglu/Honglu.pck
+Traducidos/Ryoshu/Ryoshu.pck
+Traducidos/STS2_Tomorin_Mod/STS2_Tomorin_Mod.pck
+Traducidos/sts2_char_portalcraft/sts2_char_portalcraft.pck
 _translation_work/Manosaba_esp.pck
 
 # Carpeta de originales SIN traducir (redundante: las versiones traducidas estan en Traducidos/).
@@ -11,6 +15,8 @@ Por_traducir/
 # Se conservan solo los scripts .py y el manifest para reproducibilidad.
 _translation_work/pendientes/
 _translation_work/basegame/
+_translation_work/_pend/
+_translation_work/honkai/
 _translation_work/*.pck
 _translation_work/*.txt
 _translation_work/*.zip
