@@ -7,6 +7,9 @@
   "min_game_version": "0.105.0",
   "has_pck": true,
   "has_dll": true,
-  "dependencies": [{"id": "BaseLib", "min_version": "v3.1.4"}, {"id": "LimbusCore", "min_version": "v1.1.2"}],
+  "dependencies": [
+    "BaseLib",
+    "LimbusCore"
+  ],
   "affects_gameplay": true
 }
