@@ -1,0 +1,6 @@
+TRADUCCIONES PARA LA RAMA BETA (v0.106) de Slay the Spire 2
+============================================================
+Estos mods están traducidos al español (LATAM) y son las versiones BETA.
+USO: con el juego en la rama Beta (Steam > Propiedades > Betas > v0.106),
+copiá estas carpetas a:  ...\Slay the Spire 2\mods\
+NO los uses en la rama main/estable: varios crashean ahí (usan API solo-beta).

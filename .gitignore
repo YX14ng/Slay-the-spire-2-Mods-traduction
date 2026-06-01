@@ -6,6 +6,13 @@ Traducidos/Honglu/Honglu.pck
 Traducidos/Ryoshu/Ryoshu.pck
 Traducidos/STS2_Tomorin_Mod/STS2_Tomorin_Mod.pck
 Traducidos/sts2_char_portalcraft/sts2_char_portalcraft.pck
+# Set BETA (v0.106): pcks > 100 MiB
+Traducidos_beta/Manosaba/Manosaba.pck
+Traducidos_beta/MeiLin/MeiLinMod.pck
+Traducidos_beta/Portalcraft/sts2_char_portalcraft.pck
+Traducidos_beta/Honglu/Honglu.pck
+Traducidos_beta/Ryoshu/Ryoshu.pck
+Traducidos_beta/Mordekaiser/Mordekaiser.pck
 _translation_work/Manosaba_esp.pck
 
 # Carpeta de originales SIN traducir (redundante: las versiones traducidas estan en Traducidos/).
@@ -17,6 +24,7 @@ _translation_work/pendientes/
 _translation_work/basegame/
 _translation_work/_pend/
 _translation_work/honkai/
+_translation_work/beta_dl/
 _translation_work/*.pck
 _translation_work/*.txt
 _translation_work/*.zip

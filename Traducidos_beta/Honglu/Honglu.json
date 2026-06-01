@@ -1,0 +1,11 @@
+{
+  "pck_name": "Honglu",
+  "id": "Honglu",
+  "name": "Honglu",
+  "author": "帽子",
+  "description": "鸿璐",
+  "version": "0.1.9.beta",
+  "has_pck": true,
+  "has_dll": true,
+  "affects_gameplay": true
+}

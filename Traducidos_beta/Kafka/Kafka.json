@@ -1,0 +1,11 @@
+﻿{
+  "id": "Kafka",
+  "name": "Kafka",
+  "author": "草食系妹控",
+  "description": "崩坏：星穹铁道 卡芙卡 自定义角色MOD。以触电、引爆、追击、改写四大机制编织命运之网。",
+  "version": "v0.12.2",
+  "has_pck": true,
+  "has_dll": true,
+  "dependencies": [],
+  "affects_gameplay": true
+}
