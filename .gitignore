@@ -13,6 +13,7 @@ Traducidos_beta/Portalcraft/sts2_char_portalcraft.pck
 Traducidos_beta/Honglu/Honglu.pck
 Traducidos_beta/Ryoshu/Ryoshu.pck
 Traducidos_beta/Mordekaiser/Mordekaiser.pck
+Traducidos_beta/Herta/Herta.pck
 _translation_work/Manosaba_esp.pck
 
 # Carpeta de originales SIN traducir (redundante: las versiones traducidas estan en Traducidos/).
@@ -25,6 +26,8 @@ _translation_work/basegame/
 _translation_work/_pend/
 _translation_work/honkai/
 _translation_work/beta_dl/
+_translation_work/_release/
+_translation_work/_err.py
 _translation_work/*.pck
 _translation_work/*.txt
 _translation_work/*.zip
