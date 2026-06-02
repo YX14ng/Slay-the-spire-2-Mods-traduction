@@ -1,0 +1,10 @@
+{
+  "id": "UnlimitedMultiplayer",
+  "name": "UnlimitedMultiplayer",
+  "author": "LingSamuel",
+  "description": "Allow selected non-gameplay mods to be ignored during multiplayer mod compatibility checks.",
+  "version": "v0.2.0",
+  "has_pck": true,
+  "has_dll": true,
+  "affects_gameplay": false
+}

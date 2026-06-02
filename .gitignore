@@ -6,6 +6,10 @@ Traducidos/Honglu/Honglu.pck
 Traducidos/Ryoshu/Ryoshu.pck
 Traducidos/STS2_Tomorin_Mod/STS2_Tomorin_Mod.pck
 Traducidos/sts2_char_portalcraft/sts2_char_portalcraft.pck
+# Mods nuevos (main) con pck > 100 MiB:
+Traducidos/ShinkiMod/ShinkiMod.pck
+Traducidos/Faust/Faust.pck
+Traducidos/LunaDelta/LunaDelta.pck
 # Set BETA (v0.106): pcks > 100 MiB
 Traducidos_beta/Manosaba/Manosaba.pck
 Traducidos_beta/MeiLin/MeiLinMod.pck
@@ -28,6 +32,7 @@ _translation_work/honkai/
 _translation_work/beta_dl/
 _translation_work/_release/
 _translation_work/_err.py
+_translation_work/_saves_backup_20260601/
 _translation_work/*.pck
 _translation_work/*.txt
 _translation_work/*.zip
