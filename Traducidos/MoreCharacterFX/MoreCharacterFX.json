@@ -1,0 +1,11 @@
+{
+  "id": "MoreCharacterFX",
+  "name": "MoreCharacterFX",
+  "author": "Autuma",
+  "description": "Replaces the drag targeting chain pointer with a crosshair.",
+  "version": "v0.0.1",
+  "has_pck": true,
+  "has_dll": true,
+  "dependencies": ["BaseLib"],
+  "affects_gameplay": false
+}
