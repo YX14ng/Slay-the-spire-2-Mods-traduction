@@ -1,8 +1,0 @@
-{
-  "KAFKA-SHOCK_POTION.title": "Poción de Electrocución",
-  "KAFKA-SHOCK_POTION.description": "Aplica [gold]Electrocución[/gold] (6 de daño, 3 turnos) al enemigo objetivo.",
-  "KAFKA-PURSUIT_POTION.title": "Poción de Persecución",
-  "KAFKA-PURSUIT_POTION.description": "Este turno, cada vez que activas [gold]Persecución[/gold], elige una carta de la mano para [gold]Reescribir[/gold].",
-  "KAFKA-REWRITE_INK.title": "Tinta de Reescritura",
-  "KAFKA-REWRITE_INK.description": "Elige 1 carta de la mano para [gold]Reescribir[/gold]. Luego reescribe al azar 1 carta de la pila de robo y 1 de la pila de descarte."
-}
