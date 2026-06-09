@@ -1,0 +1,11 @@
+{
+  "id": "JeanneAlter",
+  "name": "贞德Alter",
+  "author": "Laetita",
+  "description": "自定义角色「贞德Alter」及其专属卡牌",
+  "version": "v1.0.0",
+  "has_pck": true,
+  "has_dll": true,
+  "dependencies": ["BaseLib"],
+  "affects_gameplay": false
+}
