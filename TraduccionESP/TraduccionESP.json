@@ -1,0 +1,14 @@
+{
+  "id": "TraduccionESP",
+  "pck_name": "TraduccionESP",
+  "name": "Traduccion ESP (pack de mods)",
+  "author": "Chaldea",
+  "description": "Pack de traduccion al espanol (LatAm) para mods de Slay the Spire 2. Superpone localization/esp sobre los mods de Workshop. Activar idioma Espanol en el juego.",
+  "version": "1.0.0",
+  "has_pck": true,
+  "has_dll": false,
+  "affects_gameplay": false,
+  "dependencies": [
+    "BaseLib"
+  ]
+}
